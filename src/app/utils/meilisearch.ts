@@ -40,7 +40,6 @@ export const deleteDocumentFromIndex = async (indexKey: string, id: string) => {
   try {
     await index.deleteDocument(id);
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error('Error deleting resource from MeiliSearch:', error);
   }
 };
